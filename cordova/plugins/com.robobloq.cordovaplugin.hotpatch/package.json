@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+        "spec": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+        "type": "directory"
+      },
+      "/Users/long.lin/resource/roboloq/Robobloq/cordova/node_modules"
+    ]
+  ],
+  "_from": "iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+  "_id": "com.robobloq.cordovaplugin.hotpatch@1.0.1",
+  "_inCache": true,
+  "_location": "/com.robobloq.cordovaplugin.hotpatch",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+    "spec": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+  "_shasum": "ebd39687542a7ebc8d6c89f59671afde5c2162db",
+  "_shrinkwrap": null,
+  "_spec": "/Users/long.lin/resource/roboloq/Robobloq/cordova/iconIOSres/com.robobloq.cordovaplugin.hotpatch",
+  "_where": "/Users/long.lin/resource/roboloq/Robobloq/cordova/node_modules",
+  "author": {
+    "name": "linlong"
+  },
+  "cordova": {
+    "id": "ionic-plugin-hotpatch",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "hotpatch",
+  "devDependencies": {},
+  "issue": "",
+  "keywords": [
+    "cordova",
+    "keyboard",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp8",
+    "cordova-windows"
+  ],
+  "license": "Apache 2.0",
+  "name": "com.robobloq.cordovaplugin.hotpatch",
+  "optionalDependencies": {},
+  "readme": "\n\n# cordova-plugin-hotpatch\n\n\n这个插件定义了一个全局对象 `hotpatch` object,整个方法当前版本只暴露出一个方法updateNewVersion,调用该方法传入一个 www.zip的下载地址，之后插件会自动下载，并解压\n        <script type=\"text/javascript\" src=\"js/index.js\"></script>\n        <script type=\"text/javascript\">\n\n\t\t//hotpatch.updateNewVersion(\"http://10.211.131.232:8080/www.zip\");\n\n\n        </script>\n\n## Installation\n\n    cordova plugin add xxxxxxxxx\n\n\n### Supported Platforms\n\n- Android\n- iOS\n\n\n### 安装步骤\n    1 添加插件\n    2 在需要更新的时候调用更新地址\n    3 注意 android平台由于特殊性 ，需要打开主工程的mainActivity 文件，在{\n    super.onCreate(savedInstanceState);后面加上一行代码  init();\n    4 安卓和ios需要打不同的www.zip包。安卓zip包需要取assets下面的www文件夹，ios的zip包需要取platforms/ios/www\n\n    #### 补充说明\n    在android平台上的热更新原理：加了init（）后，当前app会优先执行从服务器下载到手机端的www文件内的代码，若是没有加init（），热更新不会失效，app重启后会执行原来打包的代码。\n",
+  "readmeFilename": "README.md",
+  "repository": "",
+  "version": "1.0.1"
+}

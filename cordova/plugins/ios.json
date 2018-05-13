@@ -1,0 +1,41 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.robobloq.cordovaplugin.hotpatch": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-plugin-ble-central": {
+            "BLUETOOTH_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.robobloq.az"
+        }
+    }
+}
